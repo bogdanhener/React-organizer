@@ -6,17 +6,16 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  --main-color: #cc00ff; 
+  --main-color: #0099cc; 
 }
 body {
   background: #eee;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  padding: 0 16px;
 }
 
 header {
   background-color: var(--main-color);
-  margin: auto -16px;
+  margin: auto;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -48,11 +47,12 @@ footer p {
   float: left;
 }
 .note h1 {
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 6px;
+  border-bottom: .2px solid #ccc;
 }
 .note p {
-  font-size: 1.1em;
+  font-size: 1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
