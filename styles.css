@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  --main-color: #0099cc; 
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+header {
+  background-color: var(--main-color);
+  margin: auto;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  margin-left: 55px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+  border-bottom: .2px solid #ccc;
+}
+.note p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: var(--main-color);
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 320px) and (max-width : 1024px){
+  header h1 {
+    font-size: 80px;
+  }
+  .logo{
+    transform: scale(3.8);
+    margin: 5px 20px;
+  }
+  footer p {
+    font-size: 40px;
+    
+  }
+  form.create-note{
+    width: 680px;
+  }
+  form.create-note button, .note button {
+    width: 46px;
+    height: 46px;
+  }
+ form.create-note input,
+ form.create-note textarea {
+ font-size: 2.5em;
+ }
+
+ .note{
+  width: 400px;
+ }
+ .note h1{
+ font-size: 3em;
+ border-bottom: 1px solid #ccc;
+ }
+ .note p{
+  font-size: 2em;
+ }
+ .delete, .addbtn{
+  transform: scale(2)
+ }
+}
