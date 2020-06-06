@@ -44,6 +44,7 @@ footer p {
   padding: 10px;
   width: 240px;
   margin: 16px;
+  margin-left: 55px;
   float: left;
 }
 .note h1 {
@@ -102,4 +103,43 @@ form.create-note button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (min-width: 320px) and (max-width : 1024px){
+  header h1 {
+    font-size: 80px;
+  }
+  .logo{
+    transform: scale(3.8);
+    margin: 5px 20px;
+  }
+  footer p {
+    font-size: 40px;
+    
+  }
+  form.create-note{
+    width: 680px;
+  }
+  form.create-note button, .note button {
+    width: 46px;
+    height: 46px;
+  }
+ form.create-note input,
+ form.create-note textarea {
+ font-size: 2.5em;
+ }
+
+ .note{
+  width: 400px;
+ }
+ .note h1{
+ font-size: 3em;
+ border-bottom: 1px solid #ccc;
+ }
+ .note p{
+  font-size: 2em;
+ }
+ .delete, .addbtn{
+  transform: scale(2)
+ }
 }

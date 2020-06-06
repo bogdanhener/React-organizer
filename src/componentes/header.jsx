@@ -5,7 +5,7 @@ import SpeakerNotesIcon from '@material-ui/icons/SpeakerNotes';
 function Header(){
     return (
     <header>
-      <h1><SpeakerNotesIcon /> Organizer</h1>
+      <h1><SpeakerNotesIcon className= "logo"/> Organizer</h1>
     </header>
 );
     
